@@ -1,0 +1,192 @@
+/* Assignment 2 External CSS - Student Portal */
+
+.a2-container {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #f1f5f9;
+  background-color: #0b1329;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.a2-header {
+  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.a2-header-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.a2-header-subtitle {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.a2-controls {
+  max-width: 1100px;
+  margin: 1.5rem auto 0 auto;
+  padding: 1rem 1.5rem;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.a2-search-input {
+  padding: 0.6rem 1rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.9rem;
+  min-width: 240px;
+}
+
+.a2-select {
+  padding: 0.6rem 1rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.a2-btn-sort {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.a2-btn-sort:hover {
+  opacity: 0.9;
+}
+
+.a2-main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  flex: 1;
+}
+
+.a2-student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.a2-student-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.a2-student-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(129, 140, 248, 0.3);
+}
+
+.a2-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.a2-student-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #818cf8;
+}
+
+.a2-student-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.a2-roll-number {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-family: monospace;
+}
+
+.a2-card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  background: rgba(15, 23, 42, 0.5);
+  padding: 0.85rem;
+  border-radius: 10px;
+}
+
+.a2-field-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.a2-field-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.a2-cgpa-badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.cgpa-high {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.cgpa-mid {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.a2-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #090d16;
+  color: #64748b;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: auto;
+}
